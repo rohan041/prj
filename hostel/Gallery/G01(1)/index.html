@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'><link rel="stylesheet" href="./style.css">
+ <style type="text/css">
+
+ .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color:  #9884c7;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 28px;
+  padding: 7px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -50px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  left: -30px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+  <!-- partial:index.partial.html -->
+<section class="gallery" id="portafolio">
+  <a href="../../../hostel/Gallery/gallery01.html" class="button" style="vertical-align:middle"><span>Back</span></a>
+  <div class="contenedor">
+
+    <h2 class="subtitulo">Block Images</h2>
+    
+    <div class="contenedor-galeria">
+      <img src="hostel025.PNG" alt="" class="img-galeria" height="260" width="174">
+      <img src="hostel009.PNG" alt="" class="img-galeria" height="260" width="174">
+      <img src="hostel014.PNG" alt="" class="img-galeria" height="260" width="174">
+      <img src="hostel015.PNG" alt="" class="img-galeria" height="260" width="174">
+      <img src="hostel019.PNG" alt="" class="img-galeria" height="260" width="174">
+      <img src="hostel020.PNG" alt="" class="img-galeria" height="260" width="174">
+      <img src="" alt="" class="img-galeria">
+      <img src="" alt="" class="img-galeria">
+      <img src="" alt="" class="img-galeria">
+    </div>
+  </div>
+</section>
+
+<section class="imagen-light">
+  <i class="fas fa-times close"></i>
+  <img src="./img/img-3.jpg" alt="" class="agregar-imagen">
+</section>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
